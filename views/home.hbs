@@ -1,0 +1,25 @@
+<div classname="container">
+    <h1 style="color:red">Homepage from hbs file</h1>
+<p>Website Data: {{websiteData}} </p>
+<p>Website Name: {{websiteName}} </p>
+<p>Students Number: {{studentsNum}} </p>
+<p>Company Address: {{companyData.address.street}} </p>
+</div>
+{{!--
+In code below "each" interates over the "polls" property and
+"this.name" refers to the property inside the array of objects
+--}}
+
+<ul class="foods_list">
+     Service: 
+    {{#each companyData.service}}
+   
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<ul class="users_list">
+    {{#each companyData.users}}
+    <li>{{id}}-{{name}} </li>
+    {{/each}}
+</ul>

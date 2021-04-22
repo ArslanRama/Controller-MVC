@@ -1,0 +1,28 @@
+
+<h2 style="text-align:center">Users Data</h2>
+<!-- If condition -->
+{{#if users}}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Website</th>
+        <th>Company</th>
+        <th>Phone</th>
+    </tr>
+    <!--table body/values -->
+    {{#each users}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{email}}</td>
+        <td>{{address.city}}</td>
+        <td>{{website}}</td>
+        <td>{{company.name}}</td>
+        <td>{{phone}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{else}}
+<h2> No API data here. Please visit the site later</h2>
+{{/if}}
