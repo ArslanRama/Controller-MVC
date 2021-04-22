@@ -5,8 +5,27 @@
 body {
     background-color: rgb(171, 190, 166);
     color: rgb(65, 4, 4);
-   
+}
 
+/* Navbar */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navbar {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
 }
 
 /* Home */
